@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#76A5CC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txvTitulo"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btncalculo"
+        android:text="Cálculo IMC"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#F8F5F5"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txvResultadoMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardprinmain" />
+
+    <EditText
+        android:id="@+id/edtAlturaMain"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Insira"
+        android:inputType="numberDecimal"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularMain"
+        app:layout_constraintEnd_toStartOf="@+id/edtPesoMain"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvAlturaMain" />
+
+    <EditText
+        android:id="@+id/edtPesoMain"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Insira"
+        android:inputType="numberDecimal"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtAlturaMain"
+        app:layout_constraintTop_toBottomOf="@+id/txvPesoMain" />
+
+    <TextView
+        android:id="@+id/txvAlturaMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Altura (ex: 1.70)"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/edtAlturaMain"
+        app:layout_constraintEnd_toStartOf="@+id/txvPesoMain"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvResultadoMain"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txvPesoMain"
+        android:layout_width="98dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="52dp"
+        android:text="Peso (ex: 65)"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/edtPesoMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txvAlturaMain"
+        app:layout_constraintTop_toBottomOf="@+id/txvClassificacaoMain" />
+
+    <TextView
+        android:id="@+id/txvResultadoMain"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btncalculo"
+        android:text="Seu IMC"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txvClassificacaoMain"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvTitulo" />
+
+    <Button
+        android:id="@+id/btnCalcularMain"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#1770B9"
+        android:text="calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAlturaMain" />
+
+    <ImageView
+        android:id="@+id/cardprinmain"
+        android:layout_width="97dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txvTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <ImageView
+        android:id="@+id/imvunderarmour"
+        android:layout_width="158dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/underarmor" />
+
+    <TextView
+        android:id="@+id/txvClassificacaoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btncalculo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txvResultadoMain"
+        app:layout_constraintTop_toBottomOf="@+id/txvTitulo" />
+
+    <Button
+        android:id="@+id/btnfit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#1770B9"
+        android:text="myfitnesspal"
+        app:layout_constraintBottom_toTopOf="@+id/imvunderarmour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvcard2main"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imvcard1main"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/imvcard2main"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularMain"
+        app:srcCompat="@drawable/fitband_sport_watch_fitness_diet_icon_149048" />
+
+    <ImageView
+        android:id="@+id/imvcard2main"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/imv3cardmain"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imvcard1main"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularMain"
+        app:srcCompat="@drawable/calculator_calories_daily_fitness_diet_icon_149045" />
+
+    <ImageView
+        android:id="@+id/imv3cardmain"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imvcard2main"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularMain"
+        app:srcCompat="@drawable/exercise_dumbbells_gym_fitness_diet_icon_149053" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

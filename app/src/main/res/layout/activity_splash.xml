@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#76A5CC"
+    tools:context=".SplashActivity">
+
+  <Button
+      android:id="@+id/btnSplashCadastrar"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="60dp"
+      android:layout_marginTop="100dp"
+      android:layout_marginEnd="60dp"
+      android:layout_marginBottom="5dp"
+      android:backgroundTint="#1770B9"
+      android:text="Cadastrar"
+      app:layout_constraintBottom_toTopOf="@+id/btnSplashEntrar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtSenhaSplash" />
+
+  <ImageView
+      android:id="@+id/imvFit"
+      android:layout_width="330dp"
+      android:layout_height="272dp"
+      android:layout_marginTop="44dp"
+      app:layout_constraintBottom_toTopOf="@+id/edtLoginSplash"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.506"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/myfitness2" />
+
+  <EditText
+      android:id="@+id/edtLoginSplash"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:backgroundTint="#FFFFFF"
+      android:ems="10"
+      android:hint=" E-mail"
+      android:inputType="textPersonName"
+      android:textColor="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      app:layout_constraintBottom_toTopOf="@+id/edtSenhaSplash"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.502"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imvFit" />
+
+  <EditText
+      android:id="@+id/edtSenhaSplash"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:backgroundTint="#FFFFFF"
+      android:ems="10"
+      android:hint=" Senha"
+      android:inputType="textPassword"
+      android:textColor="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      app:layout_constraintBottom_toTopOf="@+id/btnSplashCadastrar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.502"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtLoginSplash" />
+
+  <Button
+      android:id="@+id/btnSplashEntrar"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="60dp"
+      android:layout_marginEnd="60dp"
+      android:layout_marginBottom="100dp"
+      android:backgroundTint="#80B7CF"
+      android:text="Entrar"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnSplashCadastrar"
+      app:layout_constraintVertical_bias="0.992" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
